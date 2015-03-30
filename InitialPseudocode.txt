@@ -1,0 +1,83 @@
+public class Tree {
+public static void allocate(){
+if(p.size()<= size/2){
+if(noChildren){
+generateChildren();
+}
+c = findSuitableChild();
+c.allocate(Process p);
+}
+else
+assignProcess(Process p);
+}
+
+public static void findSuitableChild(){
+
+}
+public static void assingProcess(Process p){
+    if(Lchild <= Rchild && p.size <= Lchild.size())
+        return Lchild;
+    else if(Lchild > Rchild && p.size >= Lchild.size())
+        return Rchild;
+    else
+        System.out.println("Add another condition");
+    //need to make this
+}
+
+public static void deallocate(Process p){
+    Node n = find(p);
+    n.setLP(null);
+    update(p);
+}
+
+public static void update(Process p){
+    updateSizes(p);
+    //This if statements 
+    if((n.parent.getLchild.getLP() == null) && (n.parent.getRchild().getLP == null){
+        n.parent.LChild = null;
+        n.parent.RChild = null;
+}
+
+public static void find(Process p){
+    if(lp.equals(p)){
+        //return this node
+    }
+    else{
+        if(Lchild == null && Rchild == null)
+            return null;
+        else{
+            node1=Rchild.find(p);
+            node2 = Lchild.find(p);
+            if(node1 != null)
+                return node1;
+            else if (node2 != null)
+                return node2;
+            else
+                return null;
+        }
+    }
+}
+}
+}
+}
+
+//As of right now this method is only used for allocate method
+//if we want to use this method for deallocated as well, then
+//we change this method
+public static void updateNumbers(Process p){
+size = size - p.size();
+if(hasParent)
+parent.updateNumbers(Process p)
+else
+//indicator
+}
+
+public static void updateSizes(Process p){
+size = size - p.size();
+if(hasParent)
+parent.updateSizes(Process p)
+else
+//indicator
+}
+
+}
