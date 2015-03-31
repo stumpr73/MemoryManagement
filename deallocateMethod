@@ -1,0 +1,10 @@
+	public void deallocate(Process p){
+		Tree n = find(p);
+		if(n != null){
+			manageDeallocation(n);
+			n.updateParentSize((n.getSize()*-1));
+			System.out.println("The " + p.getName() + " was deallocated");
+		}
+		else
+			System.out.println("Process " + p.getName() + " could not be found.");
+	}
