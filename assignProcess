@@ -1,0 +1,8 @@
+	public void assignProcess(Process p){
+		int adjustedSize = (int)Math.pow(2,Math.ceil(Math.log(p.getSize())/Math.log(2)));
+		lp = p;
+		
+		updateParentSize(adjustedSize);
+		
+		System.out.println("The " + p.getName() + " was assigned to a node with size " + size);
+	}
