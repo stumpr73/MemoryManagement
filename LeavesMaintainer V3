@@ -1,0 +1,46 @@
+package MemoryManagement;
+
+import java.util.ArrayList;
+
+public class LeavesMaintainer {
+	
+	ArrayList<Tree> leaves;
+	
+	public LeavesMaintainer()
+	{
+		leaves = new ArrayList<Tree>();
+	}
+	
+	public void add(Tree t)
+	{
+		boolean wasDuplicate = false;
+		for(int i = 0; i< leaves.size(); i++)
+		{
+			if(leaves.get(i).equals(t))
+				wasDuplicate = true;
+		}
+		if(!wasDuplicate)
+			leaves.add(t);
+	}
+	
+	public void remove(Tree t)
+	{
+		leaves.remove(t);
+	}
+	
+	public Tree get(int i)
+	{
+		return leaves.get(i);
+	}
+	
+	public int size()
+	{
+		return leaves.size();
+	}
+	
+	public String toString()
+	{
+		return leaves.toString();
+	}
+
+}
